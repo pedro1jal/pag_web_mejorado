@@ -1,0 +1,4 @@
+/* Complemento del diseño Alemany, sin sustituir css/estilos.css */
+.catalogo-contacto-link { display:inline-block; margin-top:12px; color:var(--naranja-osc,#b63b15); font-size:.86rem; font-weight:700; text-decoration:underline; text-underline-offset:3px; }
+.catalogo-sin-foto { min-height:170px; display:grid; place-items:center; background:#f2f1ee; color:#666; padding:20px; text-align:center; }
+.catalogo-ficha-imagen { width:100%; max-height:320px; object-fit:contain; margin-bottom:24px; background:#fff; }

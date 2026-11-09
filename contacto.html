@@ -1,0 +1,100 @@
+<!-- contacto.html — Página Contacto + formulario -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto y Cotizaciones | Alemany — San Bernardo, Chile</title>
+  <meta name="description" content="Contacta a Alemany para cotizar carretillas, carros yegua y ruedas. Las Palmas #255, San Bernardo. WhatsApp +56 2 2857 4946. Respondemos rápido.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F4581C'/%3E%3Ctext x='16' y='23' font-family='Arial Black' font-size='19' fill='%2317202A' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/catalogo-integracion.css">
+</head>
+<body>
+
+<header data-componente="header"></header>
+
+<div class="pagina-cab" id="cotizar">
+  <div class="contenedor">
+    <div class="miga"><a href="index.html">Inicio</a> / Contacto</div>
+    <h1>Hablemos de tu cotización</h1>
+    <p>Escríbenos por el canal que prefieras. Los precios varían según tipo de cliente (ferretería o cliente final) y cantidad: cuéntanos qué necesitas y te cotizamos rápido.</p>
+  </div>
+</div>
+
+<section>
+  <div class="contenedor contacto-grid">
+
+    <div class="reveal">
+      <h2 style="font-family:var(--display);text-transform:uppercase;font-size:1.5rem;margin-bottom:22px">Datos directos</h2>
+      <div class="dato-contacto"><b>Teléfono / WhatsApp</b><a href="tel:+56228574946">+56 2 2857 4946</a> — <a target="_blank" rel="noopener" href="https://wa.me/56228574946?text=Hola%2C%20quiero%20cotizar%20productos%20Alemany.">abrir WhatsApp →</a></div>
+      <div class="dato-contacto"><b>Correo</b><a href="mailto:pedro.alemany1@gmail.com">pedro.alemany1@gmail.com</a></div>
+      <div class="dato-contacto"><b>Dirección</b>Las Palmas #255, San Bernardo, Santiago de Chile</div>
+      <div class="dato-contacto"><b>Horario</b>Lunes a jueves 08:00–17:30 · Viernes 08:00–14:00</div>
+      <div class="dato-contacto"><b>Entrega</b>Retiro en fábrica o entrega con transporte propio, a tu elección</div>
+      <div class="dato-contacto"><b>Pedidos especiales</b>Fabricamos a medida: <a target="_blank" rel="noopener" href="https://wa.me/56228574946?text=Hola%2C%20quiero%20consultar%20por%20un%20pedido%20especial.">consultar aquí →</a></div>
+    </div>
+
+    <div class="form-caja reveal ret-1">
+      <h3>Envíanos tu consulta</h3>
+      <p>Completa el formulario y se abrirá tu correo con el mensaje listo para enviar a pedro.alemany1@gmail.com.</p>
+      <form id="form-contacto">
+        <div class="form-fila">
+          <div class="campo"><label for="nombre">Nombre *</label><input id="nombre" name="nombre" type="text" required placeholder="Tu nombre o empresa"></div>
+          <div class="campo"><label for="telefono">Teléfono *</label><input id="telefono" name="telefono" type="tel" required placeholder="+56 9 ..."></div>
+        </div>
+        <div class="form-fila">
+          <div class="campo"><label for="correo">Correo *</label><input id="correo" name="correo" type="email" required placeholder="tucorreo@ejemplo.cl"></div>
+          <div class="campo"><label for="tipo">Tipo de cliente</label>
+            <select id="tipo" name="tipo">
+              <option>Cliente final</option>
+              <option>Ferretería / comercio</option>
+              <option>Empresa / constructora</option>
+              <option>Compra al por mayor</option>
+            </select>
+          </div>
+        </div>
+        <div class="campo"><label for="producto">Producto de interés</label>
+          <select id="producto" name="producto">
+            <option>Consulta general</option>
+            <option>Carretilla 65 L</option>
+            <option>Carretilla 90 L</option>
+            <option>Carro CI-210</option>
+            <option>Carro CI-210T (tambores)</option>
+            <option>Carro CI-230</option>
+            <option>Carro CO-250 (oxicorte)</option>
+            <option>Rueda neumática 13"</option>
+            <option>Rueda maciza 13"</option>
+            <option>Rueda maciza 8"</option>
+            <option>Rueda maciza 10"</option>
+            <option>Repuestos / otros</option>
+            <option>Pedido especial a medida</option>
+          </select>
+        </div>
+        <div class="campo"><label for="mensaje">Mensaje *</label><textarea id="mensaje" name="mensaje" rows="5" required placeholder="Cuéntanos cantidades, medidas o lo que necesites..."></textarea></div>
+        <button class="btn btn-accent" type="submit">Enviar consulta por correo</button>
+        <p class="form-nota">Si prefieres una respuesta más rápida, usa el botón de WhatsApp flotante. 💬</p>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<section class="sec-oscura" style="padding:60px 0">
+  <div class="contenedor">
+    <div class="sec-titulo reveal" style="margin-bottom:24px"><span class="ceja">Resumen rápido</span></div>
+    <div class="pasos reveal" style="border-color:#34485c">
+      <div class="paso" style="border-color:#34485c"><h3 style="color:#fff">1 · Cuéntanos qué necesitas</h3><p style="color:#aebdc9">Producto, cantidad y si eres ferretería, empresa o cliente final.</p></div>
+      <div class="paso" style="border-color:#34485c"><h3 style="color:#fff">2 · Te cotizamos</h3><p style="color:#aebdc9">Precio directo de fábrica, con condiciones para cada tipo de cliente.</p></div>
+      <div class="paso" style="border-color:#34485c"><h3 style="color:#fff">3 · Recibes tu pedido</h3><p style="color:#aebdc9">Retiro en San Bernardo o entrega con transporte propio.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer data-componente="footer"></footer>
+<script src="js/componentes.js"></script>
+<script src="js/funciones.js"></script>
+<script src="js/catalogo-config.js"></script>
+<script src="js/catalogo.js"></script>
+</body>
+</html>
